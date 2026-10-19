@@ -77,32 +77,6 @@ fakejob/
 └── fake_job_postings.csv # Dataset used for training
 ```
 
----
-
-## 🖥️ Installation & Local Deployment
-
-**Prerequisites**
-- Python 3.11.x
-- Pip 23+
-
-**Steps**
-```bash
-git clone https://github.com/techieayusshh/Safehire-AI.git
-cd Safehire-AI
-
-python -m venv .venv
-.venv\Scripts\activate
-
-pip install -r requirements.txt
-python app.py
-```
-
-Open: http://127.0.0.1:5000/
-
-**Required assets:** `Fake_job_detection.h5` and `tokenizer.pkl` must be in the project root.
-
----
-
 ## 🚀 Production Notes
 
 - **Gunicorn entrypoint:** `gunicorn app:app`
